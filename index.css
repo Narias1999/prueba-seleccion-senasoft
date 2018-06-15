@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --butons: #4498a7;
+  --butons-hover: #48c2d8;
+  --main-color: #323a44;
+  --secondary: #3d6181;
+  --secondary-opacity: #3d6181e5;
+  --ancla: #67ccd5;
+}
+body {
+  color: var(--main-color);
+  font-family: 'Nunito', sans-serif;
+}
+a {
+  color: var(--butons);
+  text-decoration: none;
+}
+header {
+  background-repeat: no-repeat;
+  background-image: url('assets/hero.jpg');
+  /* background-size: cover; */
+  background-position: top center;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 60px 70px;
+}
+p {
+  font-size: 14px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav div {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+header nav div span {
+  font-size: 35px;
+  padding: 0 10px;
+}
+header .content {
+  padding-top: 195px;
+  display: flex;
+  flex-direction: column;
+}
+header .content h2 {
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 48px;
+  padding-bottom: 60px;
+}
+.button {
+  transition: .4s;
+  color: var(--butons);
+  padding: 18px 48px;
+  border-radius: 3px;
+  background: #fff;
+  border: 2px solid #fff;
+}
+.button:hover {
+  background: var(--butons-hover);
+  color: #fff;
+  border: 2px solid var(--butons-hover);
+
+}
+header .content a {
+  margin-right: 10px;
+}
+.button.secondary {
+  background: transparent;
+  color: #fff;
+}
+.button.secondary:hover {
+  color: var(--butons-hover);
+}
+section.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+}
+section.video  a {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+section.html5 {
+  background: var(--secondary);
+  display: flex;
+  height: 400px;
+  color: #fff;
+}
+section.html5 div {
+  width: 50%;
+  height: 100%;
+}
+section.html5 .photo {
+  background-repeat: no-repeat;
+  background: url('assets/features-intro.jpg');
+  background-position: top right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.html5 div.info {
+  padding: 70px 90px;
+}
+section.html5 div.info h3 {
+  font-weight: 400;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+section.html5 div.info p {
+  margin-bottom: 18px;
+  line-height: 25px;
+}
+section.html5 div.info a {
+  color: var(--ancla);
+  font-size: 14px;
+}
+section.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 120px 90px;
+}
+section.features .feature {
+  display: flex;
+  padding: 0 15px;
+}
+section.features .feature img {
+  align-self: flex-start;
+  margin-right: 20px;
+}
+section.features .feature .info h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+section.features .feature .info p {
+  padding: 15px 0;
+  line-height: 25px;
+  color: #80919f;
+}
+section.features .feature .info p a {
+  color:  var(--ancla);
+}
+section.features .feature .info > a {
+  color: var(--main-color);
+  text-transform: uppercase;
+  transition: .3s;
+}
+section.features .feature .info > a:hover {
+  color: var(--ancla);
+}
+section.product {
+  background: url('assets/showcase-bg.jpg');
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  height: 600px;
+}
+section.product .phone-container {
+  position: relative;
+}
+section.product .cont {
+  position: absolute;
+  bottom: -122px;
+  left: 175px;
+}
+section.product .phone-container .screen {
+  width: 247px;
+  position: absolute;
+  background: url('assets/screen1.jpg');
+  background-size: cover;
+  left: 56px;
+  top: 115px;
+  height: 445px;
+}
+section.product .info {
+  width: 50%;
+  height: 100%;
+  padding-right: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+section.product .info h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+section.product .info > p {
+  padding: 20px 0;
+}
+section.product .info p {
+  line-height: 25px;
+}
+section.product .info .text-photo {
+  display: flex;
+  padding-top: 20px;
+  padding-right: 90px;
+}
+section.product .info .text-photo >img {
+  align-self: flex-start;
+  margin-right: 40px;
+}
+section.product .info .text-photo div img {
+  width: 60px;
+  padding: 20px 0;
+}
+section.product .info a {
+  align-self: flex-start;
+  margin-top: 10px;
+}
+section.packed {
+  background: #f6f7f9;
+  padding: 110px 70px;
+}
+section.packed h2 {
+  padding-top: 80px;
+  font-weight: 400;
+}
+section.packed p{
+  padding: 30px 0;
+}
+section.packed a {
+  color: var(--ancla);
+}
+section.galery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 250px);
+}
+section.galery .thumb {
+  position: relative;
+}
+section.galery .thumb>img {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+section.galery .thumb .mask {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  background: transparent;
+}
+section.galery .thumb .mask img {
+  width: 45px;
+  margin-bottom: 20px;
+}
+section.galery .thumb .mask img,
+section.galery .thumb .mask span {
+  transition: .4s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+section.galery .thumb:hover .mask {
+  background: var(--secondary-opacity);
+}
+section.galery .thumb:hover .mask img,
+section.galery .thumb:hover .mask span {
+  opacity: 1;
+  transform: translateY(0);
+}
+section.enough {
+  background: var(--secondary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+section.enough h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 40px;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 70px;
+}
+footer figure {
+  display: flex;
+  flex-direction: column;
+}
+footer figure img {
+  padding-bottom: 20px;
+  align-self: flex-start
+}
+footer figure figcaption {
+  font-size: 13px;
+  color: #ccc;
+}
+footer figure figcaption a {
+  color: var(--ancla);
+}
+footer ul {
+  display: flex;
+  align-self: flex-start;
+  padding-top: 8px;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  color: var(--secondary);
+  font-size: 15px;
+  transition: .4s;
+  text-transform: uppercase;
+  padding: 0 40px;
+}
+footer ul li a:hover {
+  color: var(--ancla);
+}
