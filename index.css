@@ -243,6 +243,7 @@ section.galery {
 }
 section.galery .thumb {
   position: relative;
+  overflow: hidden;
 }
 section.galery .thumb>img {
   position: absolute;
@@ -251,6 +252,11 @@ section.galery .thumb>img {
   left: 0;
   width: 100%;
   height: 100%;
+  transition: .3s;
+  transform: scale(1.01);
+}
+section.galery .thumb:hover img {
+  transform: scale(1.15);
 }
 section.galery .thumb .mask {
   position: absolute;
